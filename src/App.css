@@ -21,15 +21,23 @@ h1 {
 }
 
 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 15px auto;
   text-align: center;
+  max-width: 1000px;
+  min-width: 500px;
   background-color: white;
   padding: 20px 30px;
   border-radius: 10px;
 }
 
+p {
+  margin-right: 20px;
+}
+
 input[type='checkbox'] {
-  margin: 0 0 0 300px;
   padding: 0;
   width: 20px;
   height: 20px;
@@ -52,6 +60,10 @@ input[type='text']:focus {
   border: 2px solid rgb(55, 83, 168);
 }
 
+.buttonBlock {
+  float: right;
+}
+
 .createTask {
   display: block;
   margin: 30px auto;
@@ -70,6 +82,7 @@ input[type='text']:focus {
 }
 
 .deleteTask {
+  display: block;
   width: 140px;
   padding: 10px 0;
   font-size: 14px;
@@ -78,7 +91,7 @@ input[type='text']:focus {
   background-color: transparent;
   cursor: pointer;
   transition: 0.2s linear;
-  margin-top: 30px;
+  margin: 15px auto 0 auto;
 }
 
 .deleteTask:hover {
@@ -86,6 +99,7 @@ input[type='text']:focus {
 }
 
 .editTask {
+  display: block;
   width: 180px;
   padding: 10px 0;
   margin-left: 20px;
@@ -95,7 +109,7 @@ input[type='text']:focus {
   background-color: transparent;
   cursor: pointer;
   transition: 0.2s linear;
-  margin-top: 30px;
+  margin: 15px auto 0 auto;
 }
 
 .editTask:hover {
@@ -135,4 +149,13 @@ input[placeholder='Поиск задачи'] {
   cursor: pointer;
   transition: 0.2s linear;
   margin-left: 30px;
+}
+
+.taskLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.taskLink:hover {
+  text-decoration: underline;
 }
